@@ -1,0 +1,124 @@
+.banner {
+    display: flex;
+    height: 352px;
+    flex-flow: column-reverse;
+  
+    background-image: url(../banner-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .banner__conteudo {
+    max-width: var(--max-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem 2rem;
+  }
+  
+  .banner__conteudo h2 {
+    color: var(--preto-branco);
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .banner__conteudo p {
+    color: var(--preto-branco);
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .btn__login {
+    width: 11.375rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border: none;
+    cursor: pointer;
+    
+    border: 1px solid var(--azul-100);
+    background: transparent;
+  
+    color: var(--azul-100);
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  
+  .btn__login:hover {
+    background: var(--azul-20);
+  }
+  
+  .banner__conteudo a {
+    text-decoration: none;
+    color: var(--preto-branco);
+    font-size: 1rem;
+  }
+  
+  .banner__conteudo a {
+    text-decoration: none;
+  }
+  
+  .banner__conteudo .btn__enviar {
+    padding: 1rem;
+    gap: 0.625rem;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 8.0625rem;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    .btn__login {
+      width: 10.375rem;
+      height: 2.5rem;
+      padding: 0.75rem 1rem;
+      gap: 0.625rem;
+      
+      font-size: 0.875rem;
+      font-weight: 600;
+    } 
+  
+    .btn__enviar {
+      width: 7.4375rem;
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .banner {
+      height: 12rem;
+    }
+  
+    .banner__conteudo {
+      gap: 0.5rem;
+      padding: 0 1rem 1rem;
+    }
+  
+    .banner__conteudo h2 {
+      font-size: 1.375rem;
+      margin-bottom: .5rem;
+    }
+  
+    .banner__conteudo p {
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: .5rem;
+    }
+  
+    .btn__login {
+      width: 8.3125rem;
+      
+    }
+  
+    .banner__conteudo .btn__enviar {
+      width: 7.43rem;
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+    }
+    
+  }

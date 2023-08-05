@@ -1,0 +1,141 @@
+.produtos__container {
+    display: flex;
+    background-color: var(--preto-05);
+  }
+  
+  .produtos__conteudo {
+    max-width: var(--max-width);
+    width: 100%;
+    padding: 4rem 2rem;
+    margin: 0 auto;
+  }
+  
+  .produtos__titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .produtos__titulo strong {
+    color: var(--preto-100);
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .produtos__titulo a {
+    text-decoration: none;
+  }
+  
+  .btn__adicionar {
+    padding: 1rem;
+    justify-content: center;
+    gap: 0.625rem;
+    border: none;
+    background: var(--azul-100);
+    padding: 1rem;
+    width: 10.25rem;
+    cursor: pointer;
+  
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--preto-branco);  
+  }
+  
+  .btn__adicionar:hover {
+    background: var(--azul-80);
+  }
+  
+  .produtos__lista {
+    display: flex;
+    gap: 4rem 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  .produtos__lista li {
+    display: flex;
+    gap: 0.5rem;
+    position: relative;
+    flex-direction: column;
+  }
+  
+  .produtos__lista li > img {
+    object-fit: cover;
+    width: 11rem;
+    height: 10.875rem;
+  }
+  
+  .produtos__lista span {
+    color: var(--preto-100);
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .produtos__lista strong {
+    color: var(--preto-100);
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  
+  .produtos__lista button {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .btn__deletar {
+    width: 1.5rem;
+    height: 1.5rem;
+    right: 2.5rem;
+    top: .5rem;  
+  }
+  
+  .btn__editar {
+    right: .5rem;
+    top: .5rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .produtos__conteudo {
+      padding: 2rem;
+    }
+  
+    .produtos__titulo strong {
+      font-size: 1.375rem;
+    }
+  
+    .btn__adicionar {
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+      width: 9.5rem;
+    }
+  
+    .produtos__lista {
+      gap: 1rem;
+    }
+  
+    .produtos__lista li>img{
+      width: 10.25rem;
+      height: 10.875rem;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .produtos__container {
+      height: 162.6875rem;
+    }
+    .produtos__titulo {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .produtos__lista li>img{
+      width: 8.75rem;
+    }
+  
+    
+  }
+  
